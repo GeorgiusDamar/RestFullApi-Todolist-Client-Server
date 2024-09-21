@@ -24,6 +24,34 @@
 ![image](https://github.com/user-attachments/assets/10b99af2-7343-4b3b-a5f2-34162594a9ba)
 
 
+## Program
+### Route API (Routes/api.php)
+![image](https://github.com/user-attachments/assets/94fef1a6-26f7-46c6-86ea-c698dde57907)
+API yang dibuat telah dikelompokkan (grouping) dan dilindungi menggunakan middleware auth:sanctum.
+Semua rute dalam grup tersebut hanya bisa diakses jika request menyertakan token yang valid (dihasilkan setelah login) di header request. Jika token tidak ada atau tidak valid, maka akses akan ditolak dengan status 401 Unauthorized.
+
+## Controller API (Controllers/Api/TodolistControllerApi
+### index (GET)
+Digunakan untuk menampilkan seluruh data todolist
+![image](https://github.com/user-attachments/assets/53341d37-6f7f-434c-9087-5c138a78f0c3)
+
+### store (POST)
+Digunakan untuk menambahkan data todo ke database
+![image](https://github.com/user-attachments/assets/8bbe6c4b-deff-4248-ac05-43d2bc29e30f)
+
+### show{id} (GET)
+Digunakan untuk menampilkan data todo berdasarkan id
+![image](https://github.com/user-attachments/assets/3ab332ef-4d6b-447d-8922-a4e1aa659be5)
+
+### update{id} (PUT)
+Digunakan untuk mengupdate data todo berdasarkan id
+![image](https://github.com/user-attachments/assets/e7f31d53-52cb-480f-b842-95b5f8843d07)
+
+### destroy{id} (DELETE)
+Digunakan untuk menghapus data todo berdasarkan id
+![image](https://github.com/user-attachments/assets/9fe6176e-2323-4783-9015-845b38df7a60)
+
+
 ## Hasil RESTFULL API Client dan Server (menggunakan Postman)
 ### POST http://127.0.0.1:8000/api/login
 Login terlebih dahulu untuk mendapatkan token. Login digunakan untuk melindungi API yang dibuat agar tidak sembarang orang bisa menggunakan API yang telah dibuat, nantinya token yang dihasilkan akan digunakan untuk mengakses setiap API yang dilindungi, dengan cara ke Headers, isikan key Authorization dan Value berupa Bearer + token yang telah dihasilkan
