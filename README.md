@@ -1,66 +1,56 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Georgius Damarjati Susanto (215314203)
+# Tugas RESTFULL API Client dan Server pada Project Todolist
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Dokumentasi RESTFULL API menggunakan OpenAPI
+![image](https://github.com/user-attachments/assets/e6681cd3-b5e1-4b05-b9e1-6b4e0897cead)
 
-## About Laravel
+### Login
+![image](https://github.com/user-attachments/assets/66d46a64-72ff-401c-ba77-041de28a6bbc)
+### Daftar Todo
+![image](https://github.com/user-attachments/assets/95bc4bba-ffbe-4dec-a7e1-092dacfab3c2)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Buat Todo Baru
+![image](https://github.com/user-attachments/assets/5e03c258-19f7-43b8-95d6-f78a5dfabe9a)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Lihat Todo Berdasarkan ID
+![image](https://github.com/user-attachments/assets/30eea9e5-b73c-454e-8847-861f13141947)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Update Todo
+![image](https://github.com/user-attachments/assets/c01eb3ea-1672-4eb1-8284-27e884af2478)
 
-## Learning Laravel
+### Hapus Todo
+![image](https://github.com/user-attachments/assets/8e5b4918-2103-4041-b1ef-bde3b28a70b0)
+### Schemas
+![image](https://github.com/user-attachments/assets/10b99af2-7343-4b3b-a5f2-34162594a9ba)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Hasil RESTFULL API Client dan Server (menggunakan Postman)
+### Login terlebih dahulu untuk mendapatkan token
+Login digunakan untuk melindungi API yang dibuat agar tidak sembarang orang bisa menggunakan API yang telah dibuat, nantinya token yang dihasilkan akan digunakan untuk mengakses setiap API yang dilindungi, dengan cara ke Headers, isikan key Authorization dan Value berupa token yang telah dihasilkan
+![image](https://github.com/user-attachments/assets/f3c56e42-ec53-41b7-9008-ef1469942242)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+### GET http://127.0.0.1:8000/api/todos 
+Digunakan untuk menampilkan seluruh data todos melalui method index pada controller
+![image](https://github.com/user-attachments/assets/472899a6-80ac-4f76-9f77-dfc664d0275a)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### GET http://127.0.0.1:8000/api/todos/{id} (id = 7)
+Digunakan untuk menampilkan data todo berdasarkan id melalui method show pada controller
+![image](https://github.com/user-attachments/assets/3e71142f-c88d-4bef-a834-821800d55415)
 
-### Premium Partners
+### POST http://127.0.0.1:8000/api/todos
+Digunakan untuk menambahkan data todo berdasarkan melalui method store pada controller
+![image](https://github.com/user-attachments/assets/e92ab8d2-c57a-4b05-a684-5d99b7bf481d)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### PUT http://127.0.0.1:8000/api/todos/{id} (id = 7)
+Digunakan untuk mengupdate data todo berdasarkan id melalui method update pada controller
+![image](https://github.com/user-attachments/assets/387344ba-de20-4080-a956-9b4a245d2f89)
 
-## Contributing
+### DELETE http://127.0.0.1:8000/api/todos/{id} (id = 7)
+Digunakan untuk menghapus data todo berdasarkan id melalui method destroy pada controller
+Data todo dengan id = 7 berhasil di hapus
+![image](https://github.com/user-attachments/assets/d6a3bf5d-ed38-4e37-bbd3-18466054475a)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Apabila melakukan delete dengan id = 7 lagi, maka data todo tidak ditemukan karena sudah terhapus.
+![image](https://github.com/user-attachments/assets/6f5bf0c2-0248-49f4-9900-d2c51e04e687)
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
