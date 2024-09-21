@@ -1,7 +1,7 @@
 # Georgius Damarjati Susanto (215314203)
-# Tugas RESTFULL API Client dan Server pada Project Todolist
+# Tugas REST API Client dan Server pada Project Todolist
 
-## Dokumentasi RESTFULL API menggunakan OpenAPI
+## Dokumentasi RESTFULL API menggunakan OpenAPI (di Laravel terdapat pada folder app/docs/todo-api.json
 ![image](https://github.com/user-attachments/assets/e6681cd3-b5e1-4b05-b9e1-6b4e0897cead)
 
 ### Login
@@ -25,8 +25,8 @@
 
 
 ## Hasil RESTFULL API Client dan Server (menggunakan Postman)
-### Login terlebih dahulu untuk mendapatkan token
-Login digunakan untuk melindungi API yang dibuat agar tidak sembarang orang bisa menggunakan API yang telah dibuat, nantinya token yang dihasilkan akan digunakan untuk mengakses setiap API yang dilindungi, dengan cara ke Headers, isikan key Authorization dan Value berupa token yang telah dihasilkan
+### POST http://127.0.0.1:8000/api/login
+Login terlebih dahulu untuk mendapatkan token. Login digunakan untuk melindungi API yang dibuat agar tidak sembarang orang bisa menggunakan API yang telah dibuat, nantinya token yang dihasilkan akan digunakan untuk mengakses setiap API yang dilindungi, dengan cara ke Headers, isikan key Authorization dan Value berupa Bearer + token yang telah dihasilkan
 ![image](https://github.com/user-attachments/assets/f3c56e42-ec53-41b7-9008-ef1469942242)
 
 
