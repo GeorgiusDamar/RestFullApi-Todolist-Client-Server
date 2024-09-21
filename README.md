@@ -1,7 +1,7 @@
 # Georgius Damarjati Susanto (215314203)
 # Tugas REST API Client dan Server pada Project Todolist
 
-## Dokumentasi RESTFULL API menggunakan OpenAPI (di Laravel terdapat pada folder app/docs/todo-api.json
+## Dokumentasi REST API menggunakan OpenAPI (di Laravel terdapat pada folder app/docs/todo-api.json
 ![image](https://github.com/user-attachments/assets/e6681cd3-b5e1-4b05-b9e1-6b4e0897cead)
 
 ### Login
