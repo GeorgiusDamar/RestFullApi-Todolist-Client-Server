@@ -5,8 +5,6 @@
 ![image](https://github.com/user-attachments/assets/7dab3bd1-11f8-457e-8a3b-36dd39396398)
 
 
-### Login
-![image](https://github.com/user-attachments/assets/66d46a64-72ff-401c-ba77-041de28a6bbc)
 ### Daftar Todo
 ![image](https://github.com/user-attachments/assets/95bc4bba-ffbe-4dec-a7e1-092dacfab3c2)
 
@@ -37,7 +35,7 @@
 
 ## Program
 ### Route API (Routes/api.php)
-![image](https://github.com/user-attachments/assets/94fef1a6-26f7-46c6-86ea-c698dde57907)
+![image](https://github.com/user-attachments/assets/22bcfb8e-2c27-4903-b1ae-40bf143b33ab)
 API yang dibuat telah dikelompokkan (grouping) dan dilindungi menggunakan middleware auth:sanctum.
 Semua rute dalam grup tersebut hanya bisa diakses jika request menyertakan token yang valid (dihasilkan setelah login) di header request. Jika token tidak ada atau tidak valid, maka akses akan ditolak dengan status 401 Unauthorized.
 
